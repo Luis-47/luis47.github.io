@@ -1,29 +1,72 @@
-
 <!DOCTYPE html>
+    
 
-<html>
-    <style>
-        #playArea {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            /* align-items: baseline; */
-            align-items: center;
-            height: 1000px;
-            width: 100%;
-        }
-    
-    </style>
+    <html>
+        
+        <head>
+            <title>Luis's Resume</title>
+            <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+        </head>
 
-    <body>
-    
-        <div id = "playArea">
-            <h1>Try out my Helicopter Game!</h1>
-            <canvas width="500" height="500"></canvas>
-        </div>
-        <script src="https://unpkg.com/chs-js-lib@latest/dist/chs.iife.js" type="text/javascript"></script>
-        <script src="helicopter_game.js" type="text/javascript"></script>
-    
-    
-    </body>
-</html>
+        <link rel = "stylesheet" href="./nav-bar-index-page.css">
+        <body>
+
+            <div id = "container">
+                <div id = "titleBox">
+                    <h1 class = "Ttext">Luis's Resume</h1>
+                </div>
+                
+
+                <div id="box"> 
+                    <img src = "https://images.squarespace-cdn.com/content/v1/5c19466acc8fed49c11906de/1650145320669-136XM3LOF7BGL6TS0X3Q/IMG_2715+%281%29.JPG?format=500w">
+                    <div id="internal_box">
+                        <h1 class="ParaTitle"><strong>
+                            About Me
+                        </strong></h1>
+                        
+                        <h2 class="About_me">
+                            Hey, welcome to my page. I'm a highschool student and I live in San Francisco.
+                            Since I was a child I was always intrigued in Science and Mathematics. Combined with 
+                            curiosity of how things work in the world and my love of video games, I've found myself 
+                            learning about software and hardware disciplines and learning how they work together.     
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <img src = "images/index_nav_bar.png" id ="nav-bar-open">
+
+
+            <ul id = nav-bar>
+                <li><a></a></li>
+                <li><a>Experience</a></li>
+                <li><a>Skill</a></li>
+                <li><a>Education</a></li>
+                <li id = hide-button><a>Hide Me!</a></li>
+            </ul>
+
+
+            
+        </body>
+
+        <script>
+            var nav = document.getElementById("hide-button");
+	        var navBar = document.getElementById("nav-bar");
+	        var leftEnd = -100;
+	        nav.style.right = "100px";
+	        var timer ;
+	        
+	        var right = 1
+	        
+            $("#hide-button").click(function() {
+                console.log("test");
+                $("#nav-bar").toggle("slow");
+            });
+
+            $("#nav-bar-open").click(function(){
+                $("#nav-bar").toggle("slow");
+            })
+        </script>
+
+    </html>

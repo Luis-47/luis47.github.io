@@ -1,0 +1,98 @@
+#nav-bar
+{
+    display:none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height:100%;
+    background-color: #261a57;
+    position:absolute;
+    top:0;
+    left:0
+}
+li a{
+    color:rgb(240, 240, 240);
+    text-align:center;
+    display:block;
+    padding-top:5px;
+    padding-bottom:5px;
+    
+}
+li a:hover
+{
+    background-color:gray;
+}
+#hide-button a:hover
+{
+    cursor:pointer;
+    background-color:rgb(255, 72, 0);
+    
+}
+#nav-bar-open{
+   
+    background-size:110px;
+    width:75px;
+    height:100px;
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+#nav-bar-open:hover{
+    cursor: pointer;
+
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.About_me{
+    display:inline;
+    margin-left:19px
+
+}
+
+img{
+    width:300px;
+    height:400px;
+    border-radius:20px
+}
+
+#box{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+ 
+    width:650px
+}
+
+#titleBox{
+    background-color: rgb(38, 26, 84);
+    border-radius: 25px;
+    margin:12px;
+    width: 650px;
+}
+.Ttext{
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left:30%;
+    
+}
+
+h1, h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ParaTitle{
+    margin-bottom:0px
+}
+#internal_box{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
