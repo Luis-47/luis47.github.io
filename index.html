@@ -43,14 +43,34 @@
                 <li><a>Experience</a></li>
                 <li><a>Skill</a></li>
                 <li><a>Education</a></li>
+                <li><a>Achievemnts</a></li>
                 <li id = hide-button><a>Hide Me!</a></li>
             </ul>
 
+            <button id="DiscoverButton">Discover More!</button>
 
-            
+            <div id="container2">
+
+                <div class="holder"> <img id="icon" src = "https://t3.ftcdn.net/jpg/01/57/18/24/360_F_157182427_IushoUMQ4qKcBlLPKI4j0JphynUjuRG2.jpg">
+                Education
+                </div>
+
+                <div class="holder"><img id="icon" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSBkDotK73N8CYz0PIDW4cXlVb3lMh2hX5A&usqp=CAU"> 
+                Achievements
+                </div>
+
+                <div class="holder"><img id="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNTqkNt6_v6E9ypiSYraQhi9ysN8it4iV0_0nAUbGgcqHvZATszD_nS4eoWDaMXYaGiA&usqp=CAU"> 
+                Experience
+                </div>
+
+                <div class="holder"><img id="icon" src="./images/Skill image.png"> Skill </div>
+            </div>
+
+
         </body>
 
         <script>
+            /* Nav bar functionality */
             var nav = document.getElementById("hide-button");
 	        var navBar = document.getElementById("nav-bar");
 	        var leftEnd = -100;
@@ -67,6 +87,15 @@
             $("#nav-bar-open").click(function(){
                 $("#nav-bar").toggle("slow");
             })
+            /*end of nav bar functionality*/
+
+            $("#DiscoverButton").click(function(){
+                $("#DiscoverButton").animate({bottom:"22%"}, 175);
+                $("#DiscoverButton").animate({bottom:"20%"}, 175);
+            })
+
+
+
         </script>
 
     </html>
