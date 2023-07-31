@@ -40,30 +40,34 @@
 
             <ul id = nav-bar>
                 <li><a></a></li>
-                <li><a>Experience</a></li>
-                <li><a>Skill</a></li>
-                <li><a>Education</a></li>
-                <li><a>Achievemnts</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="skills.html">Skill</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="Helicopter-page.html">Helicopter Game</a></li>
                 <li id = hide-button><a>Hide Me!</a></li>
             </ul>
 
-            <button id="DiscoverButton">Discover More!</button>
+            <div id = "DisContainer">
+                <button id="DiscoverButton">Discover More!</button>
+
+            </div>
 
             <div id="container2">
 
                 <div class="holder"> <img id="icon" src = "https://t3.ftcdn.net/jpg/01/57/18/24/360_F_157182427_IushoUMQ4qKcBlLPKI4j0JphynUjuRG2.jpg">
-                Education
+                <a href="Education.html">Education</a>
                 </div>
 
                 <div class="holder"><img id="icon" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSBkDotK73N8CYz0PIDW4cXlVb3lMh2hX5A&usqp=CAU"> 
-                Achievements
+                <a href="Achievements.html">Achievements</a>
                 </div>
 
                 <div class="holder"><img id="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNTqkNt6_v6E9ypiSYraQhi9ysN8it4iV0_0nAUbGgcqHvZATszD_nS4eoWDaMXYaGiA&usqp=CAU"> 
-                Experience
+                <a href="Experience.html">Experience</a>
                 </div>
 
-                <div class="holder"><img id="icon" src="./images/Skill image.png"> Skill </div>
+                <div class="holder"><img id="icon" src="./images/Skill image.png"> <a href="skills.html">Skill</a> </div>
             </div>
 
 
@@ -82,7 +86,7 @@
             $("#hide-button").click(function() {
                 console.log("test");
                 $("#nav-bar").toggle("slow");
-            });
+            }); 
 
             $("#nav-bar-open").click(function(){
                 $("#nav-bar").toggle("slow");
@@ -91,7 +95,9 @@
 
             $("#DiscoverButton").click(function(){
                 $("#DiscoverButton").animate({bottom:"22%"}, 175);
-                $("#DiscoverButton").animate({bottom:"20%"}, 175);
+                $("#DiscoverButton").animate({bottom:"10%"}, 175);
+                $(".holder").toggle("slow");
+                $(".holder").css("display", "flex");
             })
 
 

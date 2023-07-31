@@ -1,0 +1,45 @@
+#nav-bar
+{
+    display:none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height:100%;
+    background-color: #18226dfa;
+    position:absolute;
+    top:0;
+    left:0
+}
+li a{
+    color:rgb(240, 240, 240);
+    text-align:center;
+    display:block;
+    padding-top:5px;
+    padding-bottom:5px;
+    
+}
+li a:hover
+{
+    background-color:gray;
+}
+#hide-button a:hover
+{
+    cursor:pointer;
+    background-color:rgb(255, 72, 0);
+    
+}
+#nav-bar-open{
+   
+    background-size:110px;
+    width:75px;
+    height:100px;
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+#nav-bar-open:hover{
+    cursor: pointer;
+
+}
