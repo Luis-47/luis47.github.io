@@ -5,12 +5,13 @@
 
     <head>
         <title>Achievements</title>
-
+        <link rel="stylesheet" href="Nav-Achievements.css"> 
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
     </head>
 
 
     <body>
-        <link rel="stylesheet" href="Nav-Achievements.css"> 
+        <img src = "images/index_nav_bar - Copy.png" id ="nav-bar-open">
         <ul id = nav-bar>
             <li><a></a></li>
             <li><a href="Experience.html">Experience</a></li>
@@ -21,7 +22,45 @@
             <li id = hide-button><a>Hide Me!</a></li>
         </ul>
 
+        <div id="topTitle">
+            <h1>Achievements</h1>
+        </div>
 
+        <div id="secondBox">
+            <div id="award">
+                <img class="award" src="images/39e0093d-8f54-44d6-8056-aa91fdd5ce1f.jpg" alt="">
+            </div>
+            <div id="award1">
+                <img class="award" src="images/a8760af5-5453-4aab-b55c-8df6eee45208.jpg">
+            </div>
+            
+        </div>
+        
+        <div id="thirdBox">
+            <h2>Rise University Preperatory Rewards</h2>
+            <div class="desc">Academic excelence, Extraordinary Service</div>
+        </div>
+
+        <div class="fourthBox"></div>
+            
+        </div>
+
+
+        <script>
+            /*nav bar open button function*/ 
+            $("#hide-button").click(function() {
+                console.log("test");
+                $("#nav-bar").toggle("slow");
+            }); 
+
+            $("#nav-bar-open").click(function(){
+                $("#nav-bar").toggle("slow");
+            })
+
+            $("h1").slideDown(1000);
+            $(".award").fadeIn(1500);   
+        
+        </script>
 
 
     </body>
