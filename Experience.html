@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Experience</title>
+        
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    </head>
+
+
+    <body>
+        <link rel="stylesheet" href="experience-page.css"> 
+        <img src = "images/index_nav_bar - Copy - Copy.png" id ="nav-bar-open">
+        <ul id = nav-bar>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="skills.html">Skill</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Helicopter-page.html">Helicopter Game</a></li>
+            <li id = hide-button><a>Hide Me!</a></li>
+        </ul>
+
+        <div id="topTitle">
+            <h1>Experience</h1>
+            <h2 id="wohoo">Level Up!</h2>
+            <div id="levelup">
+            </div>
+        </div>
+
+        <div id="labelContainer">
+            <div class="popup" id="green">
+                <button class="Button1">Greenagers</button>
+                <img src="images/greenagers.jpg" class="imagePop1">
+                <div class="text1"><h2>In 2021, I joined the Greenagers. This program consisted of participating in the recreation and maintenance of parks in San Francisco
+                    The program was 24 weeks with 4-5 hour spent each week. Through this program I have expanded my communication skills through meeting new peole
+                    and getting along to work together through big projects and practical work.
+                    We also shared ideas about real world problems with practical solutions that we came up with.</h2></div>
+            </div>
+            <div class="popup" id="explo">
+                <button class="Button2">Exploratorium</button>
+                <img src="images/download.jpg" class="imagePop2">
+                <div class="text2"><h2>The Exploratorium High School Explainer role consited of welcoming visitors, supporting them by answering their questions,
+                                    Standing out and leding educational exhibits (Cow Eyes dissections, Cloud demos)
+                                    and social interactions (Magic tricks, Where do you sit?, and other activities)
+                                    Helping young kids up to elders brought out a good experience that tested my patience and dedication
+                                    to ensure that visitors had a nice stay in the musuem.
+                                </h2>
+                </div>
+            </div>
+            <div class="popup" id="days">
+                <button class="Button3">Dayspring 2022</button>
+                <img src="images/dayspring.jpg" class="imagePop3">
+                <div class="text3"><h2> Summer of 2022, I joined Dayspring Partners Internship. A company that focuses on web design service.
+                                        Here I developed my knowledge in Java Script and challanged it by making a Helicopter Game with animations and
+                                        keyboard interactions. This game can be visited and played in the helicopter page linked in the menu bar. We also 
+                                        had an introduction to HTML and CSS for web development.
+                </h2></div>
+            </div>
+        </div>
+
+
+        <script>
+             /*nav bar open button function*/ 
+             $("#hide-button").click(function() {
+                console.log("test");
+                $("#nav-bar").toggle("slow");
+            }); 
+
+            $("#nav-bar-open").click(function(){
+                $("#nav-bar").toggle("slow");
+            })
+            
+            console.log($("#levelup").css("width"));
+            
+                $("#levelup").animate({width: "50px"},5000);
+                $("#levelup").animate({width: "200px"},2000);
+                $("#levelup").animate({width: "500px"},3000);
+                $("#levelup").animate({width: "800px"},1500);
+                $("#levelup").animate({width: "1000px"},4000, "swing", level);
+               
+
+
+
+
+            function level(){
+                console.log("worked")
+                $("#wohoo").slideDown("slow")
+            }
+                
+
+
+            
+
+
+
+
+
+
+            $(".Button1").click(function() {
+                console.log("test");
+                $(".text1").toggle("slow");
+                $(".imagePop1").toggle("slow");
+            }); 
+            $(".Button2").click(function() {
+                console.log("test");
+                $(".text2").toggle("slow");
+                $(".imagePop2").toggle("slow");
+            }); 
+            $(".Button3").click(function() {
+                console.log("test");
+                $(".text3").toggle("slow");
+                $(".imagePop3").toggle("slow");
+            }); 
+
+
+
+        </script>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -128,10 +128,36 @@ h1 {
 }
 
 .desc{
-    font-size:20px
+    font-size:20px;
+   
 }
 
 h2 {
+    display: block;
     font-size: 45px;
-    margin:15px
+    margin-bottom: 10px;
+   
+    
+}
+
+.certificate{
+    width: 500px;
+    height: 380px;
+    border-radius: 20px;
+    position:relative;
+  
+}
+.desc2{
+    width:250px;
+    font-size: 20px;
+}
+#fourthBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    
+    
 }

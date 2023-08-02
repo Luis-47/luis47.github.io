@@ -13,7 +13,7 @@
     <body>
         <img src = "images/index_nav_bar - Copy.png" id ="nav-bar-open">
         <ul id = nav-bar>
-            <li><a></a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="Experience.html">Experience</a></li>
             <li><a href="skills.html">Skill</a></li>
             <li><a href="Education.html">Education</a></li>
@@ -28,22 +28,30 @@
 
         <div id="secondBox">
             <div id="award">
-                <img class="award" src="images/39e0093d-8f54-44d6-8056-aa91fdd5ce1f.jpg" alt="">
+                <img class="award" src="images/Excelence.png" alt="">
             </div>
             <div id="award1">
-                <img class="award" src="images/a8760af5-5453-4aab-b55c-8df6eee45208.jpg">
+                <img class="award" src="images/Science.jpg">
             </div>
             
         </div>
         
         <div id="thirdBox">
             <h2>Rise University Preperatory Rewards</h2>
-            <div class="desc">Academic excelence, Extraordinary Service</div>
+            <div class="desc">Academic Excelence, Extraordinary Service <em> June 3rd, 2023</em></div>
         </div>
 
-        <div class="fourthBox"></div>
+        <div id="fourthBox">
+            <img class="certificate" src="images/Completion.jpg">
+           
+                <h2>Dayspring 2022 Summer Program in Coding</h2>
+
+                <div class="desc2">Certificate of Completion</div>
             
-        </div>
+        </div>      
+                
+            
+        
 
 
         <script>
@@ -60,6 +68,18 @@
             $("h1").slideDown(1000);
             $(".award").fadeIn(1500);   
         
+            $(".award").hover(function(){
+                $(this).animate({width:"300px"}, 300 )
+            }, function(){
+                $(this).animate({width:"290px"}, 300)
+            })
+
+            $(".certificate ").hover(function(){
+                $(this).animate({width:"510px", height:"390px"}, 300 )
+            }, function(){
+                $(this).animate({width:"500px", height: "380px"}, 300)
+            })
+
         </script>
 
 
