@@ -1,1 +1,123 @@
-   
+   <!DOCTYPE html>
+
+   <html>
+
+        <head>
+            <title>Skills</title>
+            <link rel="stylesheet" href="Skills-page-NAV.css">
+            <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+            <script
+          src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"
+          integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+          crossorigin="anonymous">//Allows for color animation!</script>
+        </head>
+    
+
+
+
+
+        <body>
+             
+        <img src = "images/Skills_navMeu.png" id ="nav-bar-open">
+        <ul id = nav-bar>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="skills.html">Skill</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Helicopter-page.html">Helicopter Game</a></li>
+            <li id = hide-button><a>Hide Me!</a></li>
+        </ul>
+
+
+        <div id="firstContainer">
+
+            <div id="title">
+                <h1>Skills</h1>
+            </div>
+
+            <div id="nextTitle">
+                
+                <div><h2>List of skills</h2></div>
+                <ul id="skillList">
+                    <li>CSS programming</li>
+                    <li>Java Script programming</li>
+                    <li>Jquery</li>
+                    <li>HTML programming</li>
+                    <li>Design and interactions for UI</li>
+                    <li>Debugging</li>
+                    <li>Decomposing site Layout</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div id="secondContainer">
+            <div id="stats">
+                <h3>Skill Graph</h3>
+
+                <div id="divisions">
+                    <h4>Beginner</h4>
+                    <h4>Intermidiate</h4>
+                    <h4>Advanced</h4>
+                </div>
+                <div id="graphContainer">
+                    <div class="perk">
+                        Java Script
+                        <div class="graph"></div>
+                    </div>
+
+                    <div class="perk">
+                        CSS
+                        <div class="graph2"></div>
+                    </div>
+
+                    <div class="perk">
+                        HTML
+                        <div class="graph3"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="title2">
+                <img src="images/Skillpictures.png">
+            </div>
+
+        </div>
+        
+
+            <script>
+                 /*nav bar open button function*/ 
+             $("#hide-button").click(function() {
+                console.log("test");
+                $("#nav-bar").toggle("slow");
+            }); 
+
+            $("#nav-bar-open").click(function(){
+                $("#nav-bar").toggle("slow");
+            })
+
+            
+            $("#title").animate({width: "50%", height: "559px"}, 4000, "swing", function(){
+                $("h1").slideDown(2000);
+                $("h2").toggle("slow")
+                $("#skillList li").toggle("slow")
+                $("#nextTitle").animate({right: "0px"}, 3000)
+
+            })
+
+           
+
+            
+
+            $("#title").hover(function(){
+                $("#nextTitle").animate({backgroundColor: "black", color: "white"}, "slow");
+                
+            }, function(){
+                $("#nextTitle").animate({backgroundColor: "white", color: "black"}, "slow");
+            })
+            </script>
+
+
+        </body>
+
+
+   </html>

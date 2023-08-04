@@ -1,0 +1,165 @@
+#nav-bar
+{
+    display:none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height:100%;
+    background-color: #000000;
+    position:absolute;
+    top:0;
+    left:0
+}
+li a{
+    color:rgb(255, 252, 252);
+    text-align:center;
+    display:block;
+    padding-top:5px;
+    padding-bottom:5px;
+    
+}
+li a:hover
+{
+    background-color:gray;
+}
+#hide-button a:hover
+{
+    cursor:pointer;
+    background-color:rgb(255, 72, 0);
+    
+}
+#nav-bar-open{
+   
+    background-size:110px;
+    width:75px;
+    height:100px;
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+#nav-bar-open:hover{
+    cursor: pointer;
+
+}
+body{
+    margin:0px;
+}
+
+#firstContainer{
+    display:flex;
+    width:100%;
+    height:559;
+
+}
+
+#title{
+    display:flex;
+    width:0%;
+    height:0px;
+    font-size: 35px;
+    color:white;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(black, whitesmoke);
+}
+
+h1{
+    display:none;
+
+}
+
+
+#nextTitle{
+    display:flex;
+    width:50%;
+    height:559px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: -700px;
+    position:relative
+    
+}
+#skillList li, h2{
+    font-size: x-large;
+    display:none
+}
+
+h2{
+    font-size: 75px;
+    margin: 5px
+}
+h3{
+    font-size: 40px
+}
+
+#secondContainer{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height: 1000px;
+    background-image: url("images/Untitled\ design.png");
+}
+
+#stats{
+    display:flex;
+    padding:30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width:600px;
+    border-radius: 20px ;
+}
+#title2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height:100%;
+
+}
+#divisions{
+    display:flex;
+    font-size: x-large;
+    width:500px;
+    justify-content: space-evenly;
+    color:white;
+    text-shadow: -2px 2px black;
+}
+.perk{
+    display:flex;
+    flex-direction: column;
+    font-size: 25px;
+    color:rgb(249, 246, 246);
+    text-shadow:-2px 2px rgb(0, 0, 0);
+    margin-bottom: 35px;
+}
+
+#graphContainer{
+    width:440px
+}
+
+.graph{
+    background-color:#000000;
+    width:250px;
+    height:20px;
+    border:2px solid white
+    
+  
+}
+.graph2{
+    background-color:#000000;
+    width:275px;
+    height:20px;
+    border:2px solid white
+}
+.graph3{
+    background-color:#000000;
+    width:210px;
+    height:20px;
+    border:2px solid white
+}
