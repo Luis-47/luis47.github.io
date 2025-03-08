@@ -52,7 +52,18 @@
             display:flex;
             justify-content: center;
             align-items: start; 
+        
             
+        }
+
+        .interactive{
+            background-color: #0cc6c9;
+            color: azure;
+            margin: 20px;
+            padding: 10px 20px;
+            border-radius: 25px ;
+            justify-content: center;
+            align-items: start; 
         }
         
     </style>
@@ -63,7 +74,8 @@
             <h1>Try out my Helicopter Game!</h1>
             
             <canvas width = "500px" height="500"></canvas>
-          
+            
+            <button class = "interactive">Restart</button>
             
         </div>
 
@@ -90,6 +102,11 @@
         <script src="helicopter_game.js" type="text/javascript"></script>
 
         <script>
+
+            document.getElementById("restartButton").addEventListener("click", function() {
+                location.reload();
+            });
+
             setInterval(strobe, 200);
 
             function strobe(){
