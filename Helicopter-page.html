@@ -75,7 +75,7 @@
             
             <canvas width = "500px" height="500"></canvas>
             
-            <button class = "interactive">Restart</button>
+            <button class = "interactive" id="restartButton">Restart</button>
             
         </div>
 
@@ -101,47 +101,47 @@
         <script src="https://unpkg.com/chs-js-lib@latest/dist/chs.iife.js" type="text/javascript"></script>
         <script src="helicopter_game.js" type="text/javascript"></script>
 
-        <script>
+            <script>
 
-            document.getElementById("restartButton").addEventListener("click", function() {
-                location.reload();
-            });
+                document.getElementById("restartButton").addEventListener("click", function() {
+                    location.reload();
+                });
 
-            setInterval(strobe, 200);
+                setInterval(strobe, 200);
 
-            function strobe(){
+                function strobe(){
+                    
+                    $(".ball").animate({top:"750px"}, 1000);
+                    
+                    $(".ball").animate({top:"100px"}, 1000);
+                }
+
+
+                /*Nav bar functionality*/    
+                var nav = document.getElementById("hide-button");
+                var navBar = document.getElementById("nav-bar");
+                var leftEnd = -100;
+                nav.style.right = "100px";
+                var timer ;
                 
-                $(".ball").animate({top:"750px"}, 1000);
+                var right = 1
                 
-                $(".ball").animate({top:"100px"}, 1000);
-            }
+                $("#hide-button").click(function() {
+                    console.log("test");
+                    $("#nav-bar").hide("slow");
+                });
 
-
-            /*Nav bar functionality*/    
-            var nav = document.getElementById("hide-button");
-	        var navBar = document.getElementById("nav-bar");
-	        var leftEnd = -100;
-	        nav.style.right = "100px";
-	        var timer ;
-	        
-	        var right = 1
-	        
-            $("#hide-button").click(function() {
-                console.log("test");
-                $("#nav-bar").hide("slow");
-            });
-
-            $("#nav-bar-open").click(function(){
-                $("#nav-bar").show("slow");
-            })
-	        
-            /*end of nav bar functionality*/
+                $("#nav-bar-open").click(function(){
+                    $("#nav-bar").show("slow");
+                })
+                
+                /*end of nav bar functionality*/
 
 
 
 
 
-        </script>
-    
+            </script>
+        
     </body>
 </html>
